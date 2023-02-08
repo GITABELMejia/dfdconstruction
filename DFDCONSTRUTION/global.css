@@ -1,0 +1,101 @@
+:root {
+    --color-principal: #ffbb00;
+}
+.overflow {
+    height: 50%;
+    overflow: hidden;
+}
+
+.overflow .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+    transform: scale(1.8);
+}
+
+#nprogress .bar {
+    background: var(--color-principal)!important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: var(--color-principal);
+    border-left-color: var(--color-principal);
+}
+
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+}
+/* .bg-success{
+    background-color: transparent!important;
+ }
+ .barra.bg-success{
+    background-color: transparent!important;
+} */
+.header{
+    position: relative;
+}
+.header .barra{
+    position: absolute!important;
+    z-index: 100 ;
+    width: 100%;
+}
+
+.punto{
+    color: var(--color-principal);
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.navbar-brand span{
+    font-weight: 900;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.navbar-toggler{
+    color: var(--color-principal);
+}
+/* Underline */
+
+.underline-hover::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: var(--color-principal);
+    display: block;
+    transition: all 350ms;
+}
+.underline-hover:hover::after{
+    width: 100%;
+}
+
+
+/* estilos about */
+
+
+
+.about{
+    background-image: url(/slide6.jpg);
+    height: 10rem;
+    background-size: cover;
+   background-position: center center;
+}
+@media(min-width:768px){
+    .about{
+        height: 20rem;
+    }
+}
+
+.sobre-nosotros h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
